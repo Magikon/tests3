@@ -1,0 +1,46 @@
+{
+  "name": "hivot",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**"
+    ]
+  },
+  "scripts": {
+    "reset": "find . -type dir -name node_modules | xargs rm -rf",
+    "web:start": "yarn workspace @hivot/web start",
+    "web:build": "yarn workspace @hivot/web build",
+    "lint": "ultra -r lint",
+    "lint:fix": "ultra -r lint:fix",
+    "test": "ultra -r test",
+    "typecheck": "ultra -r typecheck"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react-app": "^6.2.2",
+    "eslint-plugin-react-native": "^3.11.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^11.2.6",
+    "prettier": "^2.3.2",
+    "typescript": "4.2.4",
+    "ultra-runner": "^3.10.5"
+  },
+  "dependencies": {
+    "axios": "^0.24.0"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,js,tsx,jsx}": [
+      "yarn typecheck",
+      "yarn tslint:fix",
+      "yarn prettier"
+    ]
+  }
+}

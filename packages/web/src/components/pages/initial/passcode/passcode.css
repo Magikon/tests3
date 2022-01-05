@@ -1,0 +1,14 @@
+.passcode input::-webkit-outer-spin-button,
+.passcode input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.passcode input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.passcode button.dont-receive {
+    margin-bottom: 20px;
+}

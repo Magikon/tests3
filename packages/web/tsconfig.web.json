@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "resolveJsonModule": true,
+    "paths": {
+      "@web/components": [
+        "components/index.ts"
+      ]
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "translation": {
+    "companyName": "HIVOT",
+    "comingSoon": "Coming Soon exo jan",
+    "common": {
+      "and": "and"
+    },
+    "redirectToApp": {
+      "title": "Please download the app",
+      "download": "Click to download"
+    },
+    "messages": {
+      "errors": {
+        "incorrectCode": "Incorrect code"
+      },
+      "warning": {
+        "registration": "By signing up, you agree to the "
+      }
+    },
+    "footer": {
+      "privacyPolicy": "Privacy Policy",
+      "terms": "Terms Of Use",
+      "help": "Help",
+      "copyright": "Copyright"
+    },
+    "initial": {
+      "home": {
+        "title": "Welcome",
+        "text": "Hello and welcome to Hivot, please login or create your new account.",
+        "login": "Login / create account",
+        "have": "Have an",
+        "inviteCode": "Invite Code ?",
+        "findOut": "Find out more about"
+      },
+      "registration": {
+        "title": "Create an account",
+        "text": "Please validate the information below, if it's correct click Create Account to continue.",
+        "information": "By signing up, you agree to the {{terms}}",
+        "form": {
+          "firstName": "First Name",
+          "lastName": "Last Name",
+          "mobile": "Mobile"
+        }
+      },
+      "passcode": {
+        "title": "Enter Your Passcode",
+        "text": "Please enter the code sent to {{phoneNumber}} bellow.",
+        "didNotReceive": "DID'T RECEIVE SMS ?",
+        "form": {
+          "helperText": "Code is valid",
+          "didntReceive": "DIDN'T RECEIVE SMS?"
+        }
+      },
+      "inviteCode": {
+        "title": "Enter Your Invite Code",
+        "text": "Please enter the invitation code.",
+        "form": {
+          "helperText": "Code is valid",
+          "didntReceive": "DIDN'T RECEIVE SMS?"
+        }
+      },
+      "buttons": {
+        "next": "Next",
+        "back": "Back"
+      }
+    },
+    "app": {
+      "header": {
+        "home": "Home",
+        "projects": "Projects",
+        "people": "People",
+        "userSettings": {
+          "logout": "Logout"
+        },
+        "search": "Search something ..."
+      }
+    },
+    "login": {
+      "title": "Login"
+    }
+  }
+}

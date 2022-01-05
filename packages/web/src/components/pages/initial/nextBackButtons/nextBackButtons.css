@@ -1,0 +1,33 @@
+.next-back-buttons {
+    margin-top: 20px;
+}
+
+.next-back-buttons button {
+    color: white;
+    min-width: 80px;
+}
+
+.next-back-buttons .back button {
+    background-color: #2c3e51;
+}
+
+.next-back-buttons button svg.fa-circle-notch {
+    margin: 0 8px;
+}
+
+.next-back-buttons .back button svg {
+    margin-right: 8px;
+}
+
+.next-back-buttons .next {
+    text-align: right;
+}
+
+.next-back-buttons .next button {
+    background-color: #F47C2B;
+    color: white;
+}
+
+.next-back-buttons .next button svg {
+    margin-left: 8px;
+}

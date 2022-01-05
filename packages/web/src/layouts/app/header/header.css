@@ -1,0 +1,62 @@
+header.app-header {
+    background-color: #efefef;
+    height: 62px !important;
+    border-bottom: 2px solid #dfdada;
+}
+
+header.app-header div.logo-part {
+    padding: 20px 10px 0 20px;
+}
+
+header.app-header .MuiTabs-flexContainer {
+    margin-top: 13px;
+}
+
+header.app-header .MuiTabs-flexContainer button.MuiButtonBase-root {
+    min-width: 130px;
+    font-size: 15px;
+    color: #787777;
+}
+
+header.app-header .MuiTabs-flexContainer .MuiButtonBase-root {
+    border: 1px solid #c7c7c7;
+    border-radius: 3px 3px 0 0;
+    margin-right: 5px;
+    border-bottom: none;
+}
+
+header.app-header .MuiTabs-flexContainer .MuiButtonBase-root.Mui-selected {
+    background-color: white;
+}
+
+header.app-header .MuiTabs-indicator {
+    background-color: white;
+}
+
+header.app-header .search-bar {
+    margin-top: 6px;
+    padding: 2px 4px;
+    display: flex;
+    align-items: center;
+    width: 90%
+}
+
+header.app-header .menu-part {
+    padding: 7px;
+}
+
+header.app-header .user-menu {
+    height: 100%;
+    border: 1px solid #c7c7c7;
+}
+
+header.app-header .name {
+    margin-top: 10px;
+    text-align: right;
+}
+
+header.app-header .avatar {
+    margin-top: 7px;
+    width: 30px;
+    height: 30px;
+}

@@ -1,0 +1,31 @@
+{
+  "defaultSeverity": "warning",
+  "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier", "tslint-plugin-prettier"],
+  "jsRules": {},
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**"
+    ]
+  },
+  "rulesDirectory": [],
+  "rules": {
+    "prettier": [true, ".prettierrc"],
+    "prefer-method-signature": true,
+    "class-name": true,
+    "arrow-return-shorthand": true,
+    "prefer-const": true,
+    "max-classes-per-file": [true, 2],
+    "triple-equals": true,
+    "object-literal-sort-keys": false,
+    "rulesDirectory": ["tslint-plugin-prettier"],
+    "no-submodule-imports": false,
+    "no-implicit-dependencies": [true, ["app", "dev", "@catena"]],
+    "no-var-requires": false,
+    "no-empty-interface": false,
+    "no-unused-expression": [true, "allow-fast-null-checks"],
+    "jsx-no-lambda": false,
+    "no-object-literal-type-assertion": false,
+    "no-shadowed-variable": false,
+    "no-empty": [true, "allow-empty-catch", "allow-empty-functions"]
+  }
+}

@@ -1,0 +1,12 @@
+.tag {
+    border-radius: 5px !important;
+    height: 24px !important;
+    min-width: 24px;
+    margin-right: 5px;
+    border: 2px solid #bdbdbd !important;
+}
+
+.tag span {
+    padding-left: 6px;
+    padding-right: 6px;
+}

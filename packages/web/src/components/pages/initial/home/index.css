@@ -1,0 +1,83 @@
+.home {
+    color: #fff;
+}
+
+.home .phone-number {
+    width: 100%;
+    margin-top: 20px;
+    color: white;
+}
+
+.home .invite-code {
+    display: inline-block;
+    margin-left: 8px;
+    cursor: pointer;
+    color: #2196f3;
+}
+
+.home .phone-number .MuiPhoneNumber-flagButton {
+    margin: 10px 5px 10px 10px;
+}
+
+.home .phone-number .MuiInputBase-root.MuiInputBase-colorPrimary.MuiInputBase-formControl {
+    border: 1px solid #cdcaca;
+    border-radius: 5px;
+    height: 45px;
+}
+
+.css-1480iag-MuiInputBase-root-MuiInput-root:hover:not(.Mui-disabled):before {
+    border-bottom: none !important;
+    border-bottom: 1px solid gray !important;
+}
+
+.home .phone-number .MuiInputBase-root.MuiInputBase-colorPrimary.MuiInputBase-formControl::before {
+    color: transparent !important;
+}
+
+.home .phone-number input {
+    color: white;
+    padding-left: 10px;
+    border-left: 1px solid gray;
+}
+
+.home .buttons {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.home .buttons button {
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    background-color: #F47C2B;
+}
+
+@media (max-width: 1250px) {
+    .home .buttons button {
+        font-size: 12px;
+    }
+
+    .home .phone-number input {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .home .buttons button {
+        font-size: 10px;
+    }
+
+    .home .phone-number input {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 995px) {
+    .home .buttons button {
+        font-size: 8px;
+    }
+
+    .home .phone-number input {
+        font-size: 9px;
+    }
+}

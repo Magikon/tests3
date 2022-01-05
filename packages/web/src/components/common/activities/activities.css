@@ -1,0 +1,34 @@
+.activities .activity {
+    min-height: 50px;
+    border-bottom: 2px solid #dfdada;
+}
+
+.activities .activity .title p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: -8px;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.activities .activity:last-child {
+    margin-bottom: 30px;
+}
+
+.activities .activity .message,
+.activities .activity .date-part {
+    color: #787777;
+}
+
+.activities .activity.selected {
+    background-color: #efefef;
+}
+
+.activities .activity:hover {
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #d4d4d5;
+    -moz-box-shadow: 1px 5px 15px #d4d4d5;
+    -webkit-box-shadow: 1px 5px 15px #d4d4d5;
+    -khtml-box-shadow: 1px 5px 15px #d4d4d5;
+    -webkit-transition: box-shadow .1s ease-in;
+}

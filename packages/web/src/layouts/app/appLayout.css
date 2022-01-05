@@ -1,0 +1,6 @@
+.app-layout {
+    height: calc(100vh - 124px);
+    max-height: calc(100vh - 124px - 4px);
+}
+
+.app-layout > div {}

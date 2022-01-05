@@ -1,0 +1,10 @@
+.projects .sidebar {
+    border-right: 2px solid #dfdada;
+    height: calc(100vh - 124px - 4px);
+    overflow-y: scroll;
+}
+
+.projects .content {
+    height: calc(100vh - 124px - 4px);
+    overflow-y: scroll;
+}
