@@ -13,17 +13,39 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [14.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Shared configs
+      run: |
+        echo "AWS_DEFAULT_REGION=us-east-1"  >> $GITHUB_ENV
+        echo "ECR_REPOSITORY=hivot-web"  >> $GITHUB_ENV
+        echo "IMAGE_TAG=dev"  >> $GITHUB_ENV
+        echo "SERVICE_CLUSTER=hivot-cluster-dev"  >> $GITHUB_ENV
+        echo "SERVICE_NAME=hivot-web"  >> $GITHUB_ENV
+        echo "S3_BUCKET=hivot-web-dev" >> $GITHUB_ENV
+    - name: Print params
+      run: |
+        echo "----------    Build params -------------"
+        echo "AWS_DEFAULT_REGION:  $AWS_DEFAULT_REGION"
+        echo "ECR_REPOSITORY:      $ECR_REPOSITORY"
+        echo "IMAGE_TAG:           $IMAGE_TAG"
+        echo "SERVICE_CLUSTER:     $SERVICE_CLUSTER"
+        echo "SERVICE_NAME:        $SERVICE_NAME"
+        echo "S3_BUCKET:           $S3_BUCKET"
+    - name: Checkout        
+      uses: actions/checkout@v2
+    - name: Use Node.js v14
       uses: actions/setup-node@v2
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 14
     - run: yarn install
     - run: yarn run web:build
+    - name: Sync s3
+      uses: jakejarvis/s3-sync-action@master
+      with:
+        args: --follow-symlinks --delete
+      env:
+        AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_REGION: 'us-east-1'   # optional: defaults to us-east-1
+        SOURCE_DIR: 'packages/web/build'      # optional: defaults to entire repository
